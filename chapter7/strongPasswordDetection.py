@@ -3,17 +3,17 @@
 
 import re
 
-#TODO : test it is eight characters
+#test it is eight characters
 lengthRegex = re.compile(r'[a-zA-Z0-9\.\-]{8,}$')
 
-# TODO : test string contains uppercase and lowercase
+#test string contains uppercase and lowercase
 uppercaseRegex = re.compile(r'[A-Z]')
 lowercaseRegex = re.compile(r'[a-z]')
 
-# TODO : test string has at least one digit
+#test string has at least one digit
 digitRegex = re.compile(r'\d')
 
-# TODO : run all tests on password
+#run all tests on password
 def passwordDetection(password):
     if bool(lengthRegex.search(password))==False:
         print('Passwords must be at least eight characters long.')
